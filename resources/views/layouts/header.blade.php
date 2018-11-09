@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
-        @include(layouts.head)
+       {{-- @include(layouts.head) --}}
         <!-- Styles -->
     <style>
         html, body {
