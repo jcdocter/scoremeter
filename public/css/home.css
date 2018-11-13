@@ -4,17 +4,22 @@ body {
 }
 
 body {
-    background-color: #3c3c3c !important;
+    /*background-color: #3c3c3c !important;*/
+    background-image: url("../../resources/views/includes/foto/Zweinstein.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .home-container {
     width: 300px;
     margin-left: auto;
     margin-right: auto;
+
+
 }
 .home-wrapper {
     text-align: center;
-    margin-top: 200px;
+    /*margin-top: 200px;*/
 }
 
 .home-login-wrapper {
@@ -22,9 +27,9 @@ body {
 }
 
 .home-wrapper h1 {
-    font-family: "harry_pregular";
-    color: #e0ab2b;
-    font-size: 80px;
+    font-family: "rothenburg_decorativenormal";
+    color: #568c11;
+    font-size: 50px;
     letter-spacing: 2px;
 }
 
@@ -33,7 +38,7 @@ body {
 }
 
 .home-login-wrapper label {
-    color: white;
+    color: #568c11;
     margin: 0 0 10px;
 }
 
@@ -60,7 +65,7 @@ body {
 
 .home-login-btn button {
     font-family: "Montserrat", sans-serif;
-    background-color: #e0ab2b;
+    background-color: #568c11;
     color: white;
     cursor: pointer;
     border: 0px;
