@@ -1,7 +1,3 @@
-import axios from "axios";
-import React, { Component } from "react";
-import ReactDOM from "react-dom";
-
 export default class Hufflepuff extends Component {
     constructor(props) {
         super(props);
