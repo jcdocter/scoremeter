@@ -5,7 +5,7 @@ body {
 
 body {
     /*background-color: #3c3c3c !important;*/
-    background-image: url("../../resources/views/includes/foto/Zweinstein.jpg");
+    background-image: url("../../public/css/foto/Zweinstein.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
 }
