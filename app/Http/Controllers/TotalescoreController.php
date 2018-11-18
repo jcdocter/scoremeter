@@ -19,7 +19,7 @@ class TotalescoreController extends Controller
     public function getGroups()
     {
         Groups::select('group_name')
-            ->where('groups')
+            ->where('groupController')
             ->get();
     }
 

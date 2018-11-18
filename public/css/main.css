@@ -1,6 +1,7 @@
 @font-face {
-    font-family: "rothenburg_decorativenormal";
-    src: url("../css/fonts/rothenbg-webfont.woff") format("woff");
+    font-family: "harry_pregular";
+    src: url("../css/fonts/harry-potter-webfont.woff2") format("woff2"),
+        url("../css/fonts/harry-potter-webfont.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 }
