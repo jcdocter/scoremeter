@@ -1,10 +1,10 @@
 .navbar {
     display: flex;
     width: 100%;
-    -webkit-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2);
-    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2);
-    background-color: #ffffff;
+    /*-webkit-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2);*/
+    /*-moz-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2);*/
+    /*box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2);*/
+    /*background-color: #ffffff;*/
 }
 
 .navbar-inner {
@@ -31,21 +31,28 @@
 #nav a:active {
     text-decoration: none !important;
     font-family: "Montserrat", sans-serif;
-    color: #272727;
+    color: #568c11;
 }
 
 .scouting-info h1 {
-    font-family: "harry_pregular";
-    color: #e0ab2b;
+    font-family: "rothenburg_decorativenormal";
+    color: #568c11;
     font-size: 60px;
     position: absolute;
     margin: 0;
-    left: 47%;
+    left: 40%;
     margin-left: -50px !important;
     margin-top: 10px;
     display: block;
     top: 0 !important;
 }
+@media only screen and (max-width: 600px) {
+    .scouting-info h1 {
+        font-size: 20px;
+        /*position: relative;*/
+    }
+}
+
 
 .userAccount {
     float: right;
