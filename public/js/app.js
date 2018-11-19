@@ -8649,7 +8649,7 @@ var
 	/* eslint-enable */
 
 	// Support: IE <=10 - 11, Edge 12 - 13 only
-	// In IE/Edge using regex groups here causes severe slowdowns.
+	// In IE/Edge using regex groupController here causes severe slowdowns.
 	// See https://connect.microsoft.com/IE/feedback/details/1736512/
 	rnoInnerhtml = /<script|<style|<link/i,
 
@@ -14213,7 +14213,7 @@ if (token) {
       rsVarRange = '\\ufe0e\\ufe0f',
       rsBreakRange = rsMathOpRange + rsNonCharRange + rsPunctuationRange + rsSpaceRange;
 
-  /** Used to compose unicode capture groups. */
+  /** Used to compose unicode capture groupController. */
   var rsApos = "['\u2019]",
       rsAstral = '[' + rsAstralRange + ']',
       rsBreak = '[' + rsBreakRange + ']',
@@ -20814,7 +20814,7 @@ if (token) {
     /*------------------------------------------------------------------------*/
 
     /**
-     * Creates an array of elements split into groups the length of `size`.
+     * Creates an array of elements split into groupController the length of `size`.
      * If `array` can't be split evenly, the final chunk will be the remaining
      * elements.
      *
@@ -23596,7 +23596,7 @@ if (token) {
     }
 
     /**
-     * Creates an array of elements split into two groups, the first of which
+     * Creates an array of elements split into two groupController, the first of which
      * contains elements `predicate` returns truthy for, the second of which
      * contains elements `predicate` returns falsey for. The predicate is
      * invoked with one argument: (value).
@@ -41388,7 +41388,7 @@ function postMountWrapper(element, props, isHydrating) {
   // this is needed to work around a chrome bug where setting defaultChecked
   // will sometimes influence the value of checked (even after detachment).
   // Reference: https://bugs.chromium.org/p/chromium/issues/detail?id=608416
-  // We need to temporarily unset name to avoid disrupting radio button groups.
+  // We need to temporarily unset name to avoid disrupting radio button groupController.
   var name = node.name;
   if (name !== '') {
     node.name = '';
