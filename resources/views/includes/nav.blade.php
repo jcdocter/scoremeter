@@ -3,9 +3,11 @@
             <ul id="nav">
                     @if (Route::has('login'))
                             @auth
-                            <li><a href="{{url ('/welcome')}}">Home</a></li>
+                                <div class="marginNav">
+                            <li class="marginLi"><a href="{{url ('/welcome')}}">Home</a></li>
                             <li><a href="{{url ('/total')}}">Totaal</a></li>
                             <li><a href="{{url ('/players')}}">Deelnamers</a></li>
+                                </div>
                         @else
                             @endauth
                         @endif
