@@ -17,57 +17,49 @@ class ParticipantsTableSeeder extends Seeder
         DB::table('participants')->insert([
             'name' => "Jim",
             'lastname' => "Jam",
-            'group_id' => Groups::where('group_name', 'Gryffindor')->first()->id,
-            'score' => 15
+            'group_id' => Groups::where('group_name', 'Gryffindor')->first()->id
         ]);
 
         DB::table('participants')->insert([
             'name' => "Bob",
             'lastname' => "Bib",
-            'group_id' => Groups::where('group_name', 'Gryffindor')->first()->id,
-            'score' => 10
+            'group_id' => Groups::where('group_name', 'Gryffindor')->first()->id
         ]);
 
         DB::table('participants')->insert([
             'name' => "Peet",
             'lastname' => "Pam",
-            'group_id' => Groups::where('group_name', 'Ravenclaw')->first()->id,
-            'score' => 5
+            'group_id' => Groups::where('group_name', 'Ravenclaw')->first()->id
         ]);
 
         DB::table('participants')->insert([
             'name' => "Stefan",
             'lastname' => "Yeet",
-            'group_id' => Groups::where('group_name', 'Ravenclaw')->first()->id,
-            'score' => 20
+            'group_id' => Groups::where('group_name', 'Ravenclaw')->first()->id
         ]);
 
         DB::table('participants')->insert([
             'name' => "Tim",
             'lastname' => "Tom",
-            'group_id' => Groups::where('group_name', 'Hufflepuff')->first()->id,
-            'score' => 35
+            'group_id' => Groups::where('group_name', 'Hufflepuff')->first()->id
         ]);
 
         DB::table('participants')->insert([
             'name' => "Wil",
             'lastname' => "Wol",
-            'group_id' => Groups::where('group_name', 'Hufflepuff')->first()->id,
-            'score' => 5
+            'group_id' => Groups::where('group_name', 'Hufflepuff')->first()->id
         ]);
 
         DB::table('participants')->insert([
             'name' => "Karel",
             'lastname' => "Anker",
-            'group_id' => Groups::where('group_name', 'Slytherin')->first()->id,
-            'score' => 5
+            'group_id' => Groups::where('group_name', 'Slytherin')->first()->id
         ]);
 
         DB::table('participants')->insert([
             'name' => "Post",
             'lastname' => "Maloglu",
-            'group_id' => Groups::where('group_name', 'Slytherin')->first()->id,
-            'score' => 30
+            'group_id' => Groups::where('group_name', 'Slytherin')->first()->id
         ]);
         
     }
