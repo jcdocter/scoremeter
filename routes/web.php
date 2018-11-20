@@ -24,12 +24,13 @@ Route::group(['middleware' => ['auth']], function() {
     });
 
     Route::get('/total', function () {
-        $groups = DB::table('groups')->get();
+        $groups = DB::table('groupController')->get();
         return view('total', compact('groups'));
     });
     
     Route::get('/players', function () {
-        return view('players');
+        $participants = DB::table('participants')->get();
+        return view('players', compact('participants'));
     });
 
     Route::get('/home', 'HomeController@index')->name('home');

@@ -11,19 +11,19 @@ class GroupsTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('groups')->insert([
+        DB::table('groupController')->insert([
             'group_name' => "Gryffindor"
         ]);
         
-        DB::table('groups')->insert([
+        DB::table('groupController')->insert([
             'group_name' => "Ravenclaw"
         ]);
         
-        DB::table('groups')->insert([
+        DB::table('groupController')->insert([
             'group_name' => "Hufflepuff"
         ]);
         
-        DB::table('groups')->insert([
+        DB::table('groupController')->insert([
             'group_name' => "Slytherin"
         ]);
     }
