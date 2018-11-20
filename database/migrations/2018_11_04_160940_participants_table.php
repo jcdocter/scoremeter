@@ -18,8 +18,6 @@ class ParticipantsTable extends Migration
             $table->string('name');
             $table->string('lastname');
             $table->string('group_id');
-            $table->string('score');
-            $table->string('avatar')->default('default.jpg');
             $table->rememberToken();
             $table->timestamps();
         });

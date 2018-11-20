@@ -35,12 +35,9 @@ Route::group(['middleware' => ['auth']], function() {
 
     Route::get('/home', 'HomeController@index')->name('home');
 
-    Route::get('/players', 'AllplayersController@index')->name('total');
+    Route::get('/players', 'playersController@index')->name('players');
+
+    Route::get('/total', 'TotalescoreController@index')->name('total');
 });
 
-
-
-
-
 Auth::routes();
-

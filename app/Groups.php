@@ -15,7 +15,7 @@ class Groups extends Model
      * @var array
      */
     protected $fillable = [
-        'group_name'
+        'group_name', 'score'
     ];
 
     /**
