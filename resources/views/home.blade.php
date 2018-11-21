@@ -1,29 +1,9 @@
 @extends('layouts.home')
 
 @section('content')
-{{-- <div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">Dashboard</div>
-
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    You are logged in!
-                </div>
-            </div>
-        </div>
-    </div>
-</div> --}}
-
 <div class="home-container">
     <div class="home-wrapper">
-            <h1>Scouting </br> &nbsp; Marnix</h1>
+            <h1>Scouting </br> &nbsp; De Hoeve</h1>
     </div>
     <div class="home-login-wrapper">
             <div class="card-body">
@@ -58,17 +38,7 @@
                         </div>
                     </div>
 
-                    {{-- <div class="form-group row">
-                        <div class="col-md-6 offset-md-4">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
 
-                                <label class="form-check-label" for="remember">
-                                    {{ __('Onthouden') }}
-                                </label>
-                            </div>
-                        </div>
-                    </div> --}}
 
                     <div class="home-login-btn">
                         <div class="col-btn">
@@ -76,9 +46,7 @@
                                 {{ __('Inloggen') }}
                             </button>
 
-                            {{-- <a class="btn btn-link" href="{{ route('password.request') }}">
-                                {{ __('Forgot Your Password?') }}
-                            </a> --}}
+
                         </div>
                     </div>
                 </form>
