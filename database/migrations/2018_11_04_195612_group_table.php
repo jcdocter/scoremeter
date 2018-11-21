@@ -13,7 +13,7 @@ class GroupTable extends Migration
      */
     public function up()
     {
-        Schema::create('groupController', function (Blueprint $table) {
+        Schema::create('groups', function (Blueprint $table) {
             $table->increments('id');
             $table->string('group_name');
             $table->string('score');
@@ -29,6 +29,6 @@ class GroupTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('groupController');
+        Schema::dropIfExists('groups');
     }
 }

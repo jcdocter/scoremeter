@@ -41,13 +41,12 @@ class participants extends Controller
     $this->validate(request(),[
         'firstname' => 'required',
         'lastname' => 'required',
-        'group_id' => 'required',
-        'score' => 'required'
+        'group_id' => 'required'
 
     ]);
 
 
-    participant::create(request(['firstname' , 'lastname', 'group_id', 'score']));
+    participant::create(request(['firstname' , 'lastname', 'group_id']));
 
     return redirect('/');
 

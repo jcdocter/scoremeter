@@ -1,0 +1,6 @@
+inloggen: layout, inloggen met gegevens uit database
+home: layout,  
+players: toevoegen van namen/opslaan in database, punten optellen en af te trekken, reset 
+total: punten van alle deelnemers berekenen
+
+database: ERD, migrate/seeders

@@ -24,7 +24,7 @@ Route::group(['middleware' => ['auth']], function() {
     });
 
     Route::get('/total', function () {
-        $groups = DB::table('groupController')->get();
+        $groups = DB::table('groups')->get();
         return view('total', compact('groups'));
     });
     

@@ -19,7 +19,7 @@ class TotalescoreController extends Controller
     public function getGroups()
     {
         Groups::select('group_name')
-            ->where('groupController')
+            ->where('groups')
             ->get();
     }
 
@@ -30,7 +30,17 @@ class TotalescoreController extends Controller
 
     public function store(Request $request)
     {
+        $this->validate(request(),[
+            'id' => 'required',
+            'score' => 'required'
 
+
+        ]);
+
+
+        participant::create(request(['id' , 'score']));
+
+        return redirect('/');
     }
 
     public function show($id)

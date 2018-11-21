@@ -15,7 +15,7 @@ class ParticipantsTable extends Migration
     {
         Schema::create('participants', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name');
+            $table->string('firstname');
             $table->string('lastname');
             $table->string('group_id');
             $table->rememberToken();
