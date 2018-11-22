@@ -1,5 +1,4 @@
 @extends('layouts.total')
-
 @section('content')
 <div class="container">
         <div class="row ">

@@ -14,7 +14,8 @@
 use Illuminate\Support\Facades\DB;
 
 Route::get('/', function () {
-    return view('home');
+    $users = DB::table('users')->get();
+    return view('home', compact('users'));
 });
 
 Route::group(['middleware' => ['auth']], function() {

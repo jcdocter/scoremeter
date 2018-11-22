@@ -16,7 +16,7 @@ class participants extends Controller
 
     $participants = participant::all();
 
-    return view('players.index' , compact('players'));
+    return view('players.index' , compact('participants'));
 }
 
     /**
