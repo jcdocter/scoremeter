@@ -31,7 +31,8 @@ Route::group(['middleware' => ['auth']], function() {
     
     Route::get('/players', function () {
         $participants = DB::table('participants')->get();
-        return view('players', compact('participants'));
+        $groups = DB::table('groups')->get();
+        return view('players', compact('participants', $groups));
     });
 
     Route::get('/home', 'HomeController@index')->name('home');

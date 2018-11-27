@@ -32,13 +32,14 @@ class TotalescoreController extends Controller
     {
         $this->validate(request(),[
             'id' => 'required',
+            'group_name' =>'required',
             'score' => 'required'
 
 
         ]);
 
 
-        participant::create(request(['id' , 'score']));
+        participant::create(request(['id' , 'group_name','score']));
 
         return redirect('/');
     }
