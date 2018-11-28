@@ -32,14 +32,10 @@
 
         }
 
-
     </style>
-
-
 
     <div class="container">
         <div class="row ">
-
 
             <div class="col">
                 <div id="Gryffindor"></div>
@@ -69,15 +65,12 @@
                 <script type="text/javascript" src="{{asset('/../resources/js/components/Ravenclaw.js')}}"></script>
             </div>
         </div>
-       
+
         <script type="text/javascript" src="{{asset('/../resources/js/components/reset.js')}}"></script>
     </div>
     </div>
 
-
-
     <script src="{{mix('js/app.js')}}"></script>
     <script src=https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
 
 @endsection
