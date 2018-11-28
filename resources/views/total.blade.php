@@ -44,101 +44,33 @@
             <div class="col">
                 <div id="Gryffindor"></div>
                 <img src="images/gryffindor.jpg" />
-                <script type="text/javascript">
-                    var capnum = 0;
-                    function increment(){
-                        capnum++;
-                        document.getElementById('display').innerHTML = capnum;
-
-                    }
-
-                    function updateDiv()
-                    {
-                        $( "#display" ).load(window.location.href + " #display" );
-                    }
-                </script>
-
-                <script type="text/javascript">
-                    var capnum = 0;
-                    function decrement(){
-                        capnum--;
-                        document.getElementById('display').innerHTML = capnum;
-                    }
-                </script>
-                <div id="display" ><script type="text/javascript">document.write(capnum);</script></div>
-
-
-
+                <div id="counterG">0</div>
+                <script type="text/javascript" src="{{asset('/../resources/js/components/Gryffindor.js')}}"></script>
             </div>
 
             <div class="col">
                 <div id="Slytherin"></div>
-                <img src="images/hufflepuff.jpg" />
-
-                <script type="text/javascript">
-                    var capnumh = 0;
-                    function incrementh(){
-                        capnumh++;
-                        document.getElementById('displayh').innerHTML = capnumh;
-                    }
-                </script>
-
-                <script type="text/javascript">
-                    var capnumh = 0;
-                    function decrementh(){
-                        capnumh--;
-                        document.getElementById('displayh').innerHTML = capnumh;
-                    }
-                </script>
-                <div id="displayh" ><script type="text/javascript">document.write(capnumh);</script></div>
-
-
-
+                <img src="images/slytherin.jpg" />
+                <div id="counterS" >0</div>
+                <script type="text/javascript" src="{{asset('/../resources/js/components/Slytherin.js')}}"></script>
             </div>
+
             <div class="col">
                 <div id="Hufflepuff"></div>
-                <img src="images/ravenclaw.jpg"/>
-                <script type="text/javascript">
-                    var capnumr = 0;
-                    function incrementr(){
-                        capnumr++;
-                        document.getElementById('displayr').innerHTML = capnumr;
-                    }
-                </script>
-
-                <script type="text/javascript">
-                    var capnumr = 0;
-                    function decrementr(){
-                        capnumr--;
-                        document.getElementById('displayr').innerHTML = capnumr;
-                    }
-                </script>
-                <div id="displayr" ><script type="text/javascript">document.write(capnumr);</script></div>
+                <img src="images/hufflepuff.jpg"/>
+                <div id="counterH" >0</div>
+                <script type="text/javascript" src="{{asset('/../resources/js/components/Hufflepuff.js')}}"></script>
             </div>
 
             <div class="col">
                 <div id="Ravenclaw"></div>
-                <img src="images/slytherin.jpg" />
-                <script type="text/javascript">
-                    var capnums = 0;
-                    function increments(){
-                        capnums++;
-                        document.getElementById('displays').innerHTML = capnums;
-                    }
-                </script>
-
-                <script type="text/javascript">
-                    var capnums = 0;
-                    function decrements(){
-                        capnums--;
-                        document.getElementById('displays').innerHTML = capnums;
-                    }
-                </script>
-
-                <div id="displays" ><script type="text/javascript">document.write(capnums);</script></div>
+                <img src="images/ravenclaw.jpg" />
+                <div id="counterR" >0</div>
+                <script type="text/javascript" src="{{asset('/../resources/js/components/Ravenclaw.js')}}"></script>
             </div>
-
         </div>
+       
+        <script type="text/javascript" src="{{asset('/../resources/js/components/reset.js')}}"></script>
     </div>
     </div>
 

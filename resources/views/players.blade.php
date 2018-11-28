@@ -39,10 +39,6 @@ img{
     </head>
 
 
-
-
-
-
     <body>
     <ul id="users"></ul>
 {{--  <form id="myform" onsubmit="return addUser()">
@@ -74,129 +70,50 @@ img{
                 <div class="col">
                     <div id="Gryffindor"></div>
                     <img src="images/gryffindor.jpg" />
-                    <script type="text/javascript">
-                        var capnum = 0;
-                        function increment(){
-                            capnum++;
-                            document.getElementById('display').innerHTML = capnum;
-                        }
-                    </script>
-                    <button onclick="increment()">+</button>
-
-                <script type="text/javascript">
-                    var capnum = 0;
-                    function decrement() {
-                        if (capnum > 0) {
-                            capnum--;
-                            document.getElementById('display').innerHTML = capnum;
-                        }
-                    }
-                </script>
-
-                <button onclick="decrement()">-</button>
-                <div id="display" ><script type="text/javascript">document.write(capnum);</script></div>
+                    <button id="incrementG">+</button>
+                    <button id="decrementG">-</button>
+                    <div id="counterG">0</div>
+                    <script type="text/javascript" src="{{asset('/../resources/js/components/Gryffindor.js')}}"></script>
             </div>
 
 
             <div class="col">
                 <div id="Slytherin"></div>
-                <img src="images/hufflepuff.jpg" />
-
-                <script type="text/javascript">
-            var capnumh = 0;
-            function incrementh(){
-                capnumh++;
-                document.getElementById('displayh').innerHTML = capnumh;
-            }
-                </script>
-                <button onclick="incrementh()" >+</button>
-
-                <script type="text/javascript">
-                    var capnumh = 0;
-                    function decrementh() {
-                        if (capnumh > 0) {
-                            capnumh--;
-                            document.getElementById('displayh').innerHTML = capnumh;
-                        }
-                    }
-                </script>
-                <button onclick="decrementh()">-</button>
-                <div id="displayh" ><script type="text/javascript">document.write(capnumh);</script></div>
-
-
-
+                <img src= "images/slytherin.jpg" />
+                <button id="incrementS" >+</button>
+                <button id="decrementS">-</button>
+                <div id="counterS" >0</div>
+                <script type="text/javascript" src="{{asset('/../resources/js/components/Slytherin.js')}}"></script>
                 </div>
+
+
             <div class="col">
                <div id="Hufflepuff"></div>
-                <img src="images/ravenclaw.jpg"/>
-                <script type="text/javascript">
-                    var capnumr = 0;
-                    function incrementr(){
-                        capnumr++;
-                        document.getElementById('displayr').innerHTML = capnumr;
-                    }
-                </script>
-                <button onclick="incrementr()" >+</button>
-
-                <script type="text/javascript">
-                    var capnumr = 0;
-                    function decrementr() {
-                        if (capnumr > 0) {
-                            capnumr--;
-                            document.getElementById('displayr').innerHTML = capnumr;
-                        }
-                    }
-                </script>
-                <button onclick="decrementr()">-</button>
-                <div id="displayr" ><script type="text/javascript">document.write(capnumr);</script></div>
+                <img src="images/hufflepuff.jpg"/>
+                <button id="incrementH" >+</button>
+                <button id="decrementH">-</button>
+                <div id="counterH" >0</div>
+                <script type="text/javascript" src="{{asset('/../resources/js/components/Hufflepuff.js')}}"></script>
             </div>
+
+
             <div class="col">
               <div id="Ravenclaw"></div>
-                <img src="images/slytherin.jpg" />
-                <script type="text/javascript">
-                    var capnums = 0;
-                    function increments(){
-                        capnums++;
-                        document.getElementById('displays').innerHTML = capnums;
-                    }
-                </script>-
-                <button onclick="increments()" >+</button>
-
-                <script type="text/javascript">
-                    var capnums = 0;
-                    function decrements() {
-                        if (capnums > 0) {
-                            capnums--;
-                            document.getElementById('displays').innerHTML = capnums;
-                        }
-                    }
-                </script>
-                <button onclick="decrements()">-</button>
-                <div id="displays" ><script type="text/javascript">document.write(capnums);</script></div>
+                <img src= "images/ravenclaw.jpg"/>
+                <button id="incrementR" >+</button>
+                <button id="decrementR">-</button>
+                <div id="counterR" >0</div>
+                <script type="text/javascript" src="{{asset('/../resources/js/components/Ravenclaw.js')}}"></script>
             </div>
-                <script>
-                    function reset() {
-                     var r =confirm("are you sure you want to reset the scores");
-                     capnum = 0;
-                     capnumh = 0;
-                     capnumr = 0;
-                     capnums = 0;
-                     if(r == true) {
-                         document.getElementById('display').innerHTML = capnum;
-                         document.getElementById('displayh').innerHTML = capnumh;
-                         document.getElementById('displayr').innerHTML = capnumr;
-                         document.getElementById('displays').innerHTML = capnums;
-                     }
-                   
-                    }
-                </script>
+
+
                 <button onclick="reset()">Reset</button>
+                <script type="text/javascript" src="{{asset('/../resources/js/components/reset.js')}}"></script>
         </div>
     </div>
 
-    <script type="text/javascript">
+ {{--   <script type="text/javascript">
         var list = document.getElementById('users');
-
         function addUser(){
             var firstname = document.getElementById('firstname').value;
             var lastname = document.getElementById('lastname').value;
@@ -209,7 +126,7 @@ img{
 
 
     </script>
-
+--}}
 
 <script src="{{mix('js/app.js')}}"></script>
 @endsection
