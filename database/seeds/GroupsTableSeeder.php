@@ -13,22 +13,22 @@ class GroupsTableSeeder extends Seeder
     {
         DB::table('groups')->insert([
             'group_name' => "Gryffindor",
-            'score' => '15'
+            'score' => 0
         ]);
         
         DB::table('groups')->insert([
             'group_name' => "Ravenclaw",
-            'score' => '12'
+            'score' => 0
         ]);
         
         DB::table('groups')->insert([
             'group_name' => "Hufflepuff",
-            'score' => '10'
+            'score' => 0
         ]);
         
         DB::table('groups')->insert([
             'group_name' => "Slytherin",
-            'score' => '17'
+            'score' => 0
         ]);
     }
 }

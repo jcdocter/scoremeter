@@ -12,6 +12,7 @@ function decrement() {
     }
 }
 */
+
 if ('serviceWorker' in navigator) {
     //tabSyncReady = new Promise();
     navigator.serviceWorker.register('service-worker.js')

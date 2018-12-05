@@ -16,7 +16,7 @@ class GroupTable extends Migration
         Schema::create('groups', function (Blueprint $table) {
             $table->increments('id');
             $table->string('group_name');
-            $table->string('score');
+            $table->integer('score');
             $table->rememberToken();
             $table->timestamps();
         });

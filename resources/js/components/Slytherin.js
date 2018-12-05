@@ -76,6 +76,7 @@ function incrementS(event) {
 }
 
 
+
 function getCountS() {
     var count = parseInt(document.getElementById("counterS").innerHTML);
     if (!isNaN(count)) {

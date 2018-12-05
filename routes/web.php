@@ -40,6 +40,7 @@ Route::group(['middleware' => ['auth']], function() {
     Route::get('/players', 'playersController@index')->name('players');
 
     Route::get('/total', 'TotalescoreController@index')->name('total');
+    Route::PUT('/total/{score}', 'TotalescoreController@update')->name('total');
 });
 
 Auth::routes();

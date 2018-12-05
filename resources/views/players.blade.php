@@ -1,5 +1,4 @@
 @extends('layouts.players')
-
 @section('content')
     <html>
     <head>
@@ -32,14 +31,17 @@ img{
             width: 14%;
         }
         .row{
-            display: inline;
+            display: inline-block;
         }
 
     </style>
+        <meta name="csrf-token" content="{{ csrf_token() }}">
     </head>
+    {{--   <script src="{{asset('js/app.js')}}"></script> --}}
 
 
     <body>
+
     <ul id="users"></ul>
 {{--  <form id="myform" onsubmit="return addUser()">
 
@@ -68,7 +70,7 @@ img{
 
 
                 <div class="col">
-                    <div id="Gryffindor"></div>
+
                     <img src="images/gryffindor.jpg" />
                     <button id="incrementG">+</button>
                     <button id="decrementG">-</button>
@@ -78,7 +80,6 @@ img{
 
 
             <div class="col">
-                <div id="Slytherin"></div>
                 <img src= "images/slytherin.jpg" />
                 <button id="incrementS" >+</button>
                 <button id="decrementS">-</button>
@@ -88,7 +89,6 @@ img{
 
 
             <div class="col">
-               <div id="Hufflepuff"></div>
                 <img src="images/hufflepuff.jpg"/>
                 <button id="incrementH" >+</button>
                 <button id="decrementH">-</button>
@@ -98,7 +98,6 @@ img{
 
 
             <div class="col">
-              <div id="Ravenclaw"></div>
                 <img src= "images/ravenclaw.jpg"/>
                 <button id="incrementR" >+</button>
                 <button id="decrementR">-</button>
@@ -106,12 +105,12 @@ img{
                 <script type="text/javascript" src="{{asset('/../resources/js/components/Ravenclaw.js')}}"></script>
             </div>
 
+                <button id="reset">Reset</button>
 
-                <button onclick="reset()">Reset</button>
-                <script type="text/javascript" src="{{asset('/../resources/js/components/reset.js')}}"></script>
         </div>
     </div>
 
+    <script type="text/javascript" src="{{asset('/../resources/js/components/reset.js')}}"></script>
  {{--   <script type="text/javascript">
         var list = document.getElementById('users');
         function addUser(){
@@ -128,7 +127,6 @@ img{
     </script>
 --}}
 
-<script src="{{mix('js/app.js')}}"></script>
 @endsection
     </body>
     </html>

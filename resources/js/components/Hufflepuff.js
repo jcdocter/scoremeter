@@ -74,6 +74,7 @@ function incrementH(event) {
 }
 
 
+
 function getCountH() {
     var count = parseInt(document.getElementById("counterH").innerHTML);
     if (!isNaN(count)) {

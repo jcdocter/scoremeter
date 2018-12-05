@@ -12,7 +12,7 @@ class TotalescoreController extends Controller
 {
     public function index()
     {
-        $groups = Groups::all()->toArray();
+        $groups = groups::all()->toArray();
         return view('/total', compact('groups'));
     }
 
@@ -30,16 +30,16 @@ class TotalescoreController extends Controller
 
     public function store(Request $request)
     {
-        $this->validate(request(),[
+        $this->validate(request(), [
             'id' => 'required',
-            'group_name' =>'required',
+            'group_name' => 'required',
             'score' => 'required'
 
 
         ]);
 
 
-        participant::create(request(['id' , 'group_name','score']));
+        participant::create(request(['id', 'group_name', 'score']));
 
         return redirect('/');
     }
@@ -56,6 +56,6 @@ class TotalescoreController extends Controller
 
     public function update(Request $request, $id)
     {
-
+groups::where('id', $id)->update(array('score' =>''));
     }
 }
